@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -20,9 +20,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -208,7 +207,7 @@
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfTC" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/csinterface.png" />
+      <property role="1iqoE4" value="${module}/icons/csinterface.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkC_PW">
@@ -224,7 +223,7 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4491876417845683832" />
       <ref role="20lvS9" node="3TmmsQkDmpO" resolve="OperationParameter" />
-      <ref role="20ksaX" to="x27k:4WTYg$PUiX5" />
+      <ref role="20ksaX" to="x27k:4WTYg$PUiX5" resolve="arguments" />
     </node>
     <node concept="1TJgyj" id="5HTuIUP_k1Q" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -270,7 +269,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfTx" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/operation.png" />
+      <property role="1iqoE4" value="${module}/icons/operation.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkC_Q2">
@@ -320,7 +319,7 @@
       <ref role="20lvS9" node="3TmmsQkCzn9" resolve="Component" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfTB" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/providedport.png" />
+      <property role="1iqoE4" value="${module}/icons/providedport.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkD8YD">
@@ -349,7 +348,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfTy" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/requiredport.png" />
+      <property role="1iqoE4" value="${module}/icons/requiredport.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDc76">
@@ -433,7 +432,7 @@
       <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfTA" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/runnable.png" />
+      <property role="1iqoE4" value="${module}/icons/runnable.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDc79">
@@ -486,7 +485,7 @@
       <ref role="20lvS9" node="3TmmsQkDdTN" resolve="AtomicComponent" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfT_" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/component.png" />
+      <property role="1iqoE4" value="${module}/icons/component.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDdTQ">
@@ -628,7 +627,7 @@
       <ref role="PrY4T" node="5hYHEwZAyxP" resolve="IComponentInstanceAware" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfTD" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/instanceConfiguration.png" />
+      <property role="1iqoE4" value="${module}/icons/instanceConfiguration.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDmpO">
@@ -770,7 +769,7 @@
       <property role="20kJfa" value="portAdapter" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="466603768608410222" />
-      <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" />
+      <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" resolve="expression" />
       <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
     </node>
   </node>
@@ -786,7 +785,7 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="466603768608442378" />
       <ref role="20lvS9" node="71UKpntoTuE" resolve="PortRefExpr" />
-      <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" />
+      <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" resolve="expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="wOd6nl4Yxh">
@@ -852,7 +851,7 @@
       <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$CfT$" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/field.png" />
+      <property role="1iqoE4" value="${module}/icons/field.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="4AGl5dzwUZT">
@@ -1064,7 +1063,7 @@
     <property role="EcuMT" value="6591434695300950447" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1QGGSu" id="1N5Tah$CfTz" role="rwd14">
-      <property role="1QGGTI" value="${module}/icons/resultexpression.png" />
+      <property role="1iqoE4" value="${module}/icons/resultexpression.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="5HTuIUPDB1h">
@@ -1847,7 +1846,7 @@
       <property role="20kJfa" value="portAdapter" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8594519220734394066" />
-      <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" />
+      <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" resolve="expression" />
       <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
     </node>
     <node concept="asaX9" id="4WC4fmOMQLM" role="lGtFl" />
