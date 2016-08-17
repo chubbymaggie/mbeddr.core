@@ -20,7 +20,7 @@ task build_cbmcMac(type: Exec) {
 
 task build_cbmcLinux(type: Exec) {
     workingDir cbmcSrcHome
-    def args = buildProcSpawnArgList([script_build_cbmcMac])
+    def args = buildProcSpawnArgList([script_build_cbmcLinux])
     commandLine(args)
 }
 
