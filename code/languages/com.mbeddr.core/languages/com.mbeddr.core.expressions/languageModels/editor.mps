@@ -72,6 +72,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
         <property id="2162403111523065396" name="cellId" index="1lyBwo" />
       </concept>
@@ -134,6 +135,7 @@
       <concept id="1165253627126" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup" flags="ng" index="1exORT">
         <child id="1165253890469" name="parameterObjectType" index="1eyP2E" />
       </concept>
+      <concept id="7342352913006985500" name="jetbrains.mps.lang.editor.structure.TransformationLocation_Completion" flags="ng" index="3eGOoe" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -206,6 +208,9 @@
       </concept>
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
+      </concept>
+      <concept id="5624877018228264944" name="jetbrains.mps.lang.editor.structure.TransformationMenuContribution" flags="ng" index="3INDKC">
+        <child id="6718020819489956031" name="menuReference" index="AmTjC" />
       </concept>
       <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
         <child id="1948540814633499358" name="editorContext" index="lBI5i" />
@@ -437,6 +442,7 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
+      <concept id="2283544813052478257" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarCellsTransformationMenuPart" flags="ng" index="2X7gjp" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
@@ -4579,6 +4585,38 @@
   </node>
   <node concept="3p36aQ" id="2cvVnUv6F2g">
     <ref role="aqKnT" to="mj1l:3MUk0N5szEJ" resolve="PreIncrementExpression" />
+  </node>
+  <node concept="3INDKC" id="1YKLYyy$2YR">
+    <property role="TrG5h" value="T1" />
+    <node concept="A1WHr" id="1YKLYyy$2YT" role="AmTjC">
+      <ref role="2ZyFGn" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1Qtc8_" id="1YKLYyy$30X" role="IW6Ez">
+      <node concept="2X7gjp" id="1YKLYyyFwu4" role="1Qtc8A" />
+      <node concept="3eGOoe" id="1YKLYyy$31c" role="1Qtc8$" />
+      <node concept="3cWJ9i" id="1YKLYyyBYYt" role="1Qtc8$">
+        <node concept="CtIbL" id="1YKLYyyBYYv" role="CtIbM">
+          <property role="CtIbK" value="LEFT" />
+        </node>
+        <node concept="CtIbL" id="1YKLYyyBYYK" role="CtIbM">
+          <property role="CtIbK" value="RIGHT" />
+        </node>
+      </node>
+      <node concept="IWgqT" id="1YKLYyy$39X" role="1Qtc8A">
+        <node concept="1hCUdq" id="1YKLYyy$39Z" role="1hCUd6">
+          <node concept="3clFbS" id="1YKLYyy$3a1" role="2VODD2">
+            <node concept="3clFbF" id="1YKLYyy$a1f" role="3cqZAp">
+              <node concept="Xl_RD" id="1YKLYyy$a1e" role="3clFbG">
+                <property role="Xl_RC" value="=$$" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="1YKLYyy$3a3" role="IWgqQ">
+          <node concept="3clFbS" id="1YKLYyy$3a5" role="2VODD2" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
