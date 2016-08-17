@@ -38,5 +38,10 @@ task publish_cbmcMac(type: Zip) {
 }
 
 task publish_cbmcLinux(type: Zip) {
+    println("cbmcHome.absolutePath: "+ cbmcHome.absolutePath)
+    println("exists: "+ cbmcHome.exists())
+    cbmcHome.listFiles().each { file ->
+        println("file: " +file.getName())
+    }
     from file(cbmcHome.absolutePath + "/" + "cbmc-linux.tar.gz")
 }
