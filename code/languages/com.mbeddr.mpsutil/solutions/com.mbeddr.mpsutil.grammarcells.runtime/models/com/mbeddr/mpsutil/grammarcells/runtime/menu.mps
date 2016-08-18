@@ -14,6 +14,7 @@
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="czm" ref="r:e8e03ffa-3c1e-4997-9f51-6f8ca9be2f23(com.mbeddr.mpsutil.grammarcells.runtime)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -60,6 +61,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -83,9 +85,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -264,10 +263,15 @@
         </node>
       </node>
       <node concept="3clFbS" id="1YKLYyyGCA0" role="3clF47">
-        <node concept="3clFbF" id="1YKLYyyGOKk" role="3cqZAp">
-          <node concept="1rXfSq" id="1YKLYyyGOKi" role="3clFbG">
-            <ref role="37wK5l" node="1YKLYyyGCA4" resolve="canExecute" />
-            <node concept="37vLTw" id="1YKLYyyGPmK" role="37wK5m">
+        <node concept="3clFbF" id="2mvFNoUmao$" role="3cqZAp">
+          <node concept="17R0WA" id="2mvFNoUmb0P" role="3clFbG">
+            <node concept="1rXfSq" id="2mvFNoUmbsj" role="3uHU7w">
+              <ref role="37wK5l" node="1YKLYyyGCAh" resolve="getMatchingText" />
+              <node concept="37vLTw" id="2mvFNoUmcLi" role="37wK5m">
+                <ref role="3cqZAo" node="1YKLYyyGC_V" resolve="pattern" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2mvFNoUmaoz" role="3uHU7B">
               <ref role="3cqZAo" node="1YKLYyyGC_V" resolve="pattern" />
             </node>
           </node>
@@ -294,9 +298,19 @@
         </node>
       </node>
       <node concept="3clFbS" id="1YKLYyyGCAd" role="3clF47">
-        <node concept="3clFbF" id="1YKLYyyGOEC" role="3cqZAp">
-          <node concept="3clFbT" id="1YKLYyyGOEB" role="3clFbG">
-            <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="2mvFNoUm6Pf" role="3cqZAp">
+          <node concept="2YIFZM" id="2mvFNoUm6Rf" role="3clFbG">
+            <ref role="37wK5l" to="18ew:~PatternUtil.matchesPattern(java.lang.String,java.lang.String):boolean" resolve="matchesPattern" />
+            <ref role="1Pybhc" to="18ew:~PatternUtil" resolve="PatternUtil" />
+            <node concept="37vLTw" id="2mvFNoUm6Sv" role="37wK5m">
+              <ref role="3cqZAo" node="1YKLYyyGCA8" resolve="pattern" />
+            </node>
+            <node concept="1rXfSq" id="2mvFNoUm7od" role="37wK5m">
+              <ref role="37wK5l" node="1YKLYyyGCAh" resolve="getMatchingText" />
+              <node concept="37vLTw" id="2mvFNoUm8Dz" role="37wK5m">
+                <ref role="3cqZAo" node="1YKLYyyGCA8" resolve="pattern" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
