@@ -6809,8 +6809,8 @@
                                   </node>
                                   <node concept="liA8E" id="Tf4IGa0c69" role="2OqNvi">
                                     <ref role="37wK5l" node="Tf4IGa0c5Q" resolve="query" />
-                                    <node concept="37vLTw" id="7NlRaxANQzo" role="37wK5m">
-                                      <ref role="3cqZAo" node="2mvFNoUxG2B" resolve="expectedOutputConceptExactly" />
+                                    <node concept="37vLTw" id="My09KfLN0u" role="37wK5m">
+                                      <ref role="3cqZAo" node="My09KfuUbg" resolve="expectedOutputConcept" />
                                     </node>
                                   </node>
                                 </node>
@@ -7003,8 +7003,8 @@
                                                       </node>
                                                       <node concept="liA8E" id="7NlRaxAZdnQ" role="2OqNvi">
                                                         <ref role="37wK5l" node="7NlRaxAZdnz" resolve="query" />
-                                                        <node concept="37vLTw" id="7NlRaxAZdnR" role="37wK5m">
-                                                          <ref role="3cqZAo" node="2mvFNoUxG2B" resolve="expectedOutputConceptExactly" />
+                                                        <node concept="37vLTw" id="My09KfLNyq" role="37wK5m">
+                                                          <ref role="3cqZAo" node="My09KfuUbg" resolve="expectedOutputConcept" />
                                                         </node>
                                                       </node>
                                                     </node>
