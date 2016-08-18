@@ -24,6 +24,7 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
+    <import index="78sh" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.substitute(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpdg" ref="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" implicit="true" />
   </imports>
@@ -2142,8 +2143,8 @@
       <node concept="3clFbS" id="6jH9yJK5uuD" role="3clF47">
         <node concept="3clFbF" id="6jH9yJK5uxr" role="3cqZAp">
           <node concept="2c44tf" id="6jH9yJK5uxp" role="3clFbG">
-            <node concept="3uibUv" id="6jH9yJK5uyl" role="2c44tc">
-              <ref role="3uigEE" to="zce0:~NodeSubstituteActionsFactoryContext" resolve="NodeSubstituteActionsFactoryContext" />
+            <node concept="3uibUv" id="2mvFNoUqVew" role="2c44tc">
+              <ref role="3uigEE" to="78sh:~SubstituteMenuContext" resolve="SubstituteMenuContext" />
             </node>
           </node>
         </node>
@@ -2174,7 +2175,7 @@
                 <ref role="3TV0OU" to="teg0:6jH9yJK5utb" resolve="Parameter_NodeSubstituteActionsFactoryContext" />
               </node>
               <node concept="3TUQnm" id="6jH9yJK5u_8" role="HW$Y0">
-                <ref role="3TV0OU" to="teg0:6jH9yJK3qwj" resolve="Parameter_OperationContext" />
+                <ref role="3TV0OU" to="teg0:7NlRaxAKB$S" resolve="Parameter_expectedOutputConceptExactly" />
               </node>
             </node>
           </node>
@@ -2197,8 +2198,8 @@
         <node concept="3clFbF" id="6jH9yJK5u_e" role="3cqZAp">
           <node concept="2c44tf" id="6jH9yJK5u_f" role="3clFbG">
             <node concept="A3Dl8" id="6jH9yJK5u_g" role="2c44tc">
-              <node concept="3uibUv" id="6jH9yJK5u_h" role="A3Ik2">
-                <ref role="3uigEE" to="f4zo:~SubstituteAction" resolve="SubstituteAction" />
+              <node concept="3uibUv" id="2mvFNoUycXB" role="A3Ik2">
+                <ref role="3uigEE" to="78sh:~SubstituteMenuItem" resolve="SubstituteMenuItem" />
               </node>
             </node>
           </node>
@@ -3236,6 +3237,30 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="5wt0D$BOnw5" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7NlRaxAKBGM">
+    <property role="3GE5qa" value="cells" />
+    <ref role="13h7C2" to="teg0:7NlRaxAKB$S" resolve="Parameter_expectedOutputConceptExactly" />
+    <node concept="13hLZK" id="7NlRaxAKBGN" role="13h7CW">
+      <node concept="3clFbS" id="7NlRaxAKBGO" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7NlRaxAKBHa" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="7NlRaxAKBHb" role="1B3o_S" />
+      <node concept="3clFbS" id="7NlRaxAKBHg" role="3clF47">
+        <node concept="3clFbF" id="7NlRaxAKBOq" role="3cqZAp">
+          <node concept="2c44tf" id="7NlRaxAKBOo" role="3clFbG">
+            <node concept="3bZ5Sz" id="7NlRaxAKBQD" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7NlRaxAKBHh" role="3clF45">
         <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
       </node>
     </node>

@@ -960,5 +960,18 @@
     <property role="34LRSv" value="grammarCells" />
     <ref role="1TJDcQ" to="tpc2:1qY_lWSjJZY" resolve="TransformationMenuPart" />
   </node>
+  <node concept="1TIwiD" id="7NlRaxAKB$S">
+    <property role="EcuMT" value="8995338446579071288" />
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="Parameter_expectedOutputConceptExactly" />
+    <property role="34LRSv" value="expectedOutputConceptExactly" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7NlRaxB6aVc">
+    <property role="EcuMT" value="8995338446584721100" />
+    <property role="TrG5h" value="GrammarCellsSubstituteMenuPart" />
+    <property role="34LRSv" value="grammarCells" />
+    <ref role="1TJDcQ" to="tpc2:n0c53aH5hE" resolve="SubstituteMenuPart" />
+  </node>
 </model>
 
