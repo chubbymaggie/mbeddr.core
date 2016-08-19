@@ -6691,12 +6691,24 @@
                             <property role="3TUv4t" value="true" />
                             <node concept="3bZ5Sz" id="My09KfuUbh" role="1tU5fm" />
                             <node concept="3K4zz7" id="My09KfuUbi" role="33vP2m">
-                              <node concept="2OqwBi" id="My09KfuUbj" role="3K4E3e">
-                                <node concept="37vLTw" id="My09KfuUbk" role="2Oq$k0">
+                              <node concept="2YIFZM" id="My09Khc43x" role="3K4E3e">
+                                <ref role="37wK5l" to="czm:My09KhaUTQ" resolve="getSpecializedTargetConcept" />
+                                <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                                <node concept="37vLTw" id="My09Khc5Pl" role="37wK5m">
                                   <ref role="3cqZAo" node="My09KfuUba" resolve="link" />
                                 </node>
-                                <node concept="liA8E" id="My09KfuUbl" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                                <node concept="2OqwBi" id="My09Khc6yf" role="37wK5m">
+                                  <node concept="2OqwBi" id="My09Khc6eI" role="2Oq$k0">
+                                    <node concept="37vLTw" id="My09Khc65I" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2mvFNoUxG2A" resolve="_context" />
+                                    </node>
+                                    <node concept="liA8E" id="My09Khc6oD" role="2OqNvi">
+                                      <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getParentNode():org.jetbrains.mps.openapi.model.SNode" resolve="getParentNode" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="My09Khc6RX" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="37vLTw" id="My09KfuUbm" role="3K4GZi">
@@ -7713,16 +7725,7 @@
                           <node concept="3cpWsn" id="My09KfuFlX" role="3cpWs9">
                             <property role="TrG5h" value="expectedOutputConcept" />
                             <property role="3TUv4t" value="true" />
-                            <node concept="3bZ5Sz" id="My09KfuFlY" role="1tU5fm" />
                             <node concept="3K4zz7" id="My09KfuFlZ" role="33vP2m">
-                              <node concept="2OqwBi" id="My09KfuFm0" role="3K4E3e">
-                                <node concept="37vLTw" id="My09KfuFm1" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="My09KfuFlR" resolve="link" />
-                                </node>
-                                <node concept="liA8E" id="My09KfuFm2" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
-                                </node>
-                              </node>
                               <node concept="37vLTw" id="My09KfuFm3" role="3K4GZi">
                                 <ref role="3cqZAo" node="2mvFNoUxYG1" resolve="expectedOutputConceptExactly" />
                               </node>
@@ -7732,7 +7735,28 @@
                                   <ref role="3cqZAo" node="My09KfuFlR" resolve="link" />
                                 </node>
                               </node>
+                              <node concept="2YIFZM" id="My09Khc9O4" role="3K4E3e">
+                                <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                                <ref role="37wK5l" to="czm:My09KhaUTQ" resolve="getSpecializedTargetConcept" />
+                                <node concept="37vLTw" id="My09Khc9O5" role="37wK5m">
+                                  <ref role="3cqZAo" node="My09KfuFlR" resolve="link" />
+                                </node>
+                                <node concept="2OqwBi" id="My09Khc9O6" role="37wK5m">
+                                  <node concept="2OqwBi" id="My09Khc9O7" role="2Oq$k0">
+                                    <node concept="37vLTw" id="My09Khc9O8" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2mvFNoUxYFZ" resolve="_context" />
+                                    </node>
+                                    <node concept="liA8E" id="My09Khc9O9" role="2OqNvi">
+                                      <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getParentNode():org.jetbrains.mps.openapi.model.SNode" resolve="getParentNode" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="My09Khc9Oa" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
+                            <node concept="3bZ5Sz" id="My09KfuFlY" role="1tU5fm" />
                           </node>
                         </node>
                         <node concept="3clFbH" id="My09KfuCSy" role="3cqZAp" />
@@ -8529,14 +8553,6 @@
                         <property role="3TUv4t" value="true" />
                         <node concept="3bZ5Sz" id="7Bho1IUpxnl" role="1tU5fm" />
                         <node concept="3K4zz7" id="My09KfuAOI" role="33vP2m">
-                          <node concept="2OqwBi" id="My09KfuBzo" role="3K4E3e">
-                            <node concept="37vLTw" id="My09KfuBeq" role="2Oq$k0">
-                              <ref role="3cqZAo" node="My09Kfuzh3" resolve="link" />
-                            </node>
-                            <node concept="liA8E" id="My09KfuCr_" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
-                            </node>
-                          </node>
                           <node concept="37vLTw" id="My09KfuCtR" role="3K4GZi">
                             <ref role="3cqZAo" node="2mvFNoUy03U" resolve="expectedOutputConceptExactly" />
                           </node>
@@ -8544,6 +8560,26 @@
                             <node concept="10Nm6u" id="My09KfuAnZ" role="3uHU7w" />
                             <node concept="37vLTw" id="My09KfuA31" role="3uHU7B">
                               <ref role="3cqZAo" node="My09Kfuzh3" resolve="link" />
+                            </node>
+                          </node>
+                          <node concept="2YIFZM" id="My09KhcalZ" role="3K4E3e">
+                            <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                            <ref role="37wK5l" to="czm:My09KhaUTQ" resolve="getSpecializedTargetConcept" />
+                            <node concept="37vLTw" id="My09Khcam0" role="37wK5m">
+                              <ref role="3cqZAo" node="My09Kfuzh3" resolve="link" />
+                            </node>
+                            <node concept="2OqwBi" id="My09Khcam1" role="37wK5m">
+                              <node concept="2OqwBi" id="My09Khcam2" role="2Oq$k0">
+                                <node concept="37vLTw" id="My09Khcam3" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2mvFNoUy03S" resolve="_context" />
+                                </node>
+                                <node concept="liA8E" id="My09Khcam4" role="2OqNvi">
+                                  <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getParentNode():org.jetbrains.mps.openapi.model.SNode" resolve="getParentNode" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="My09Khcam5" role="2OqNvi">
+                                <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                              </node>
                             </node>
                           </node>
                         </node>
