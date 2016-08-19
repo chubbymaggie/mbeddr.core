@@ -74,5 +74,9 @@
     <property role="TrG5h" value="ICollectionLikeCell" />
     <property role="EcuMT" value="6709378149504662456" />
   </node>
+  <node concept="PlHQZ" id="My09KgFpc9">
+    <property role="EcuMT" value="910290744976970505" />
+    <property role="TrG5h" value="IGrammarCellsActionFilter" />
+  </node>
 </model>
 
