@@ -78,6 +78,9 @@
         <property id="562388756446465811" name="transformTag" index="yp4Ub" />
       </concept>
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
+      <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
+        <reference id="6718020819487620874" name="menu" index="A1WHt" />
+      </concept>
       <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
         <property id="2162403111523065396" name="cellId" index="1lyBwo" />
       </concept>
@@ -178,6 +181,7 @@
         <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
+        <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -2700,6 +2704,9 @@
         </node>
         <node concept="2V7CMv" id="cwSfPztkgq" role="3F10Kt">
           <property role="2V7CMs" value="ext_1_RTransform" />
+        </node>
+        <node concept="A1WHu" id="My09KifVD2" role="3vIgyS">
+          <ref role="A1WHt" node="2cvVnUv6BbJ" resolve="convertToElseIf" />
         </node>
       </node>
       <node concept="YGO_4" id="7KznU_43CI5" role="3EZMnx">
